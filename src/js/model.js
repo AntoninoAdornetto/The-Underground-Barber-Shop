@@ -1,5 +1,3 @@
-"use strict";
-
 export const totalHairCuts = function () {
   const curDate = new Date();
   const openingDate = new Date("07/11/2001");
