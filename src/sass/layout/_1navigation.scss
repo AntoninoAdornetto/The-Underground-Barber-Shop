@@ -1,0 +1,54 @@
+@import "../abstracts/variables";
+
+.navigation {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      $showcase-color1,
+      $showcase-color2
+    ),
+    url("../img/showcase.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__links--div {
+    ul {
+      display: flex;
+
+      .navigation__link {
+        padding: 1rem;
+        display: block;
+      }
+    }
+  }
+}
+
+// Toggle Class for Navigation Heading
+.nav__title--click {
+  display: none;
+}
+
+// ShowCase
+#showcase {
+  height: 90vh;
+  .showcase__logo--div {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-inline: auto;
+  }
+  .showcase__inner--div {
+    height: 2%;
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .showcase--container {
+    height: 100%;
+    width: 100%;
+  }
+}

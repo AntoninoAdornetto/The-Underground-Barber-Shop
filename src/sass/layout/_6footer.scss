@@ -1,0 +1,26 @@
+@import "../abstracts/variables";
+
+#footer {
+  height: 100%;
+  width: 100%;
+  margin-inline: auto;
+  background-color: $background-color;
+  overflow: hidden;
+
+  .footer__container {
+    height: 100%;
+    // max-width: 123.8rem;
+    width: 100%;
+    background: $background-color;
+    margin-inline: auto;
+  }
+
+  .navigation__title--div,
+  .navigation__title--copyright {
+    height: 100%;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+//

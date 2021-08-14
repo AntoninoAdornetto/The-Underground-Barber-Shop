@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Specializing in men's haircuts, The Armanino Showroom (also known as The Underground Barbershop) is the spot to go to in Boise if you are looking for a great cut"
+    />
+    <meta
+      name="keywords"
+      content="armanino, showroom, barbershop, barber, haircut, boise, idaho, biagio, adornetto, fashion, style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script type="module" src="/src/js/controller.js"></script>
+    <title>The Underground Barber Shop | Home</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="navigation__container">
+        <div class="navigation__title--div">Armanino Showroom</div>
+        <a href="#" class="navigation__toggle">
+          <span class="toggle--btn"></span>
+          <span class="toggle--btn"></span>
+          <span class="toggle--btn"></span>
+        </a>
+        <div class="navigation__links--div">
+          <ul>
+            <li>
+              <a href="#about__section" class="navigation__link">About</a>
+            </li>
+            <li>
+              <a href="#card__section" class="navigation__link">Contact</a>
+            </li>
+            <li>
+              <a href="#gallery__section" class="navigation__link">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="showcase">
+        <div class="showcase--container showcase--entrance">
+          <div class="showcase__logo--div">
+            <img
+              src="./src/img/logo--white.png"
+              alt="Straight Razor Logo"
+              class="logo"
+            />
+          </div>
+          <div class="showcase__inner--div center">
+            <span class="main__title--span">The Underground Barbershop</span>
+          </div>
+          <div class="showcase__inner--div center">
+            <p class="main--slogan">GQ Haircuts Since 2001</p>
+          </div>
+          <div class="showcase__inner--div center">
+            <a href="#about__section" class="navigation__button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about__section">
+      <div class="container">
+        <div class="inner--div bottom">
+          <h1 class="about--heading center">
+            Beyond the rarely <span>noticed neon</span>
+          </h1>
+        </div>
+        <div class="inner--div top">
+          <p class="about--bio center">
+            The Underground Barber Shop resides where most businesses start, the
+            garage. From storage unit to barber shop, The Underground is the
+            smallest store front in downtown Boise Idaho, coming in at a
+            whopping 400 square feet.
+          </p>
+        </div>
+        <div class="btn--div center">
+          <a
+            href="https://www.ktvb.com/article/entertainment/places/idaho-life/from-storeroom-to-storefront-the-story-of-boises-underground-barber/277-123081916"
+            target="_blank"
+            rel="noreferrer"
+            class="navigation__button--dark"
+            >KTVB Article</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="location__section">
+      <div class="container">
+        <div class="split--div--left bg--image">
+          <h3 class="location--text">Location</h3>
+        </div>
+        <div class="split--div">
+          <div id="mapid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="card__section">
+      <div id="card--container" class="container">
+        <div class="card--div">
+          <div class="split--icon">
+            <i class="fas fa-camera-retro card--icon fa-3x"></i>
+          </div>
+          <div class="split--text">
+            <p class="card--text cut__counter--p"></p>
+            <span class="cut__counter" data-cut=""></span>
+          </div>
+          <div class="split--text card--text">Picture Perfect Haircuts</div>
+        </div>
+        <div class="card--div">
+          <div class="split--icon">
+            <i class="fas fa-door-open card--icon fa-3x"></i>
+          </div>
+          <div class="split--text">
+            <p class="card--text">Doors Open</p>
+          </div>
+          <div class="split--text">
+            <p class="card--text">Monday-Saturday</p>
+          </div>
+        </div>
+        <div class="card--div">
+          <div class="split--icon">
+            <i class="fas fa-mobile-alt card--icon fa-3x"></i>
+          </div>
+          <div class="split--text">
+            <a href="tel:208-343-7333" class="call--link"
+              ><p class="card--text">Click to Call</p></a
+            >
+          </div>
+          <div class="split--text">
+            <p class="card--text">208-343-7333</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery__section">
+      <div class="container">
+        <div class="center title">
+          <h2 class="gallery--heading">"A legend at his craft"</h2>
+        </div>
+        <div class="photos--container">
+          <div class="slide slide--1">
+            <img
+              src="/src/img/slides/mobile/mobile1.jpeg"
+              alt="Barber Shop Owner and his Son"
+              loading="lazy"
+              class="image--slide"
+            />
+          </div>
+          <div class="slide slide--2">
+            <img
+              src="/src/img/slides/mobile/mobile2.jpeg"
+              alt="Barber Shop Owners son in Europe with a fresh cut from Biagio"
+              loading="lazy"
+              class="image--slide"
+            />
+          </div>
+          <div class="slide slide--3">
+            <img
+              src="/src/img/slides/mobile/mobile3.jpeg"
+              alt="Kids standing in barber chair after a haircut"
+              loading="lazy"
+              class="image--slide"
+            />
+          </div>
+          <div class="slide slide--4">
+            <img
+              src="/src/img/slides/mobile/mobile4.jpeg"
+              alt="Son and Father selfie after a hair cut"
+              loading="lazy"
+              class="image--slide"
+            />
+          </div>
+          <div class="slide slide--5">
+            <img
+              src="/src/img/slides/mobile/mobile5.jpeg"
+              alt="Picture of a hair cut"
+              loading="lazy"
+              class="image--slide"
+            />
+          </div>
+          <div class="slide slide--6">
+            <img
+              src="/src/img/slides/mobile/mobile6.jpeg"
+              alt="Picture of a hair cut"
+              loading="lazy"
+              class="image--slide"
+            />
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clear"></section>
+
+    <footer id="footer">
+      <div class="footer__container center">
+        <div class="navigation__title--div outline center">
+          Developed by Antonino Adornetto
+          <a
+            href="https://github.com/AntoninoAdornetto"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="fab fa-github-square footer--icon"></i
+          ></a>
+          <a
+            href="mailto:thearmaninoshowroom@icloud.com"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="far fa-envelope footer--icon"></i
+          ></a>
+        </div>
+        <div class="navigation__title--div outline center">
+          The Underground Barbershop
+          <a
+            href="https://www.facebook.com/biagio.adornetto"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="fab fa-facebook-square footer--icon"></i
+          ></a>
+          <a href="tel:208-343-7333"
+            ><i class="fas fa-phone-square-alt footer--icon"></i
+          ></a>
+          <a
+            href="https://www.google.com/search?q=the+underground+barber+shop+boise+idaho"
+            rel="noreferrer"
+            target="_blank"
+            ><i class="fas fa-map-marked-alt footer--icon"></i
+          ></a>
+        </div>
+        <div class="navigation__title--copyright center">
+          Copyright &copy 2001-2021 Armanino Showroom
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

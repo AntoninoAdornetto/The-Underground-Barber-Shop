@@ -1,0 +1,16 @@
+img {
+  max-width: 100%;
+}
+
+.logo {
+  max-height: 60%;
+  height: 15rem;
+  transition: all 0.5;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

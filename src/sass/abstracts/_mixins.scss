@@ -1,0 +1,38 @@
+@import "./variables";
+
+@mixin bgFontColor {
+  transition: color 0.5s;
+  &:hover {
+    color: $font-color1;
+  }
+}
+
+@mixin btnLight {
+  color: $background-color;
+  background: linear-gradient(to right, $font-color1 50%, white 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all 0.7s ease-out;
+  border-radius: 3px;
+  padding: 0.5rem 1.5rem;
+
+  &:hover {
+    background-position: left bottom;
+    color: $light-color;
+  }
+}
+
+@mixin btnDark {
+  color: $light-color;
+  background: linear-gradient(to right, $light-color 50%, $font-color1 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all 0.7s ease-out;
+  border-radius: 3px;
+  padding: 0.5rem 1.5rem;
+
+  &:hover {
+    background-position: left bottom;
+    color: $font-color2;
+  }
+}

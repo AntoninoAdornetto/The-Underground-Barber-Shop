@@ -1,0 +1,105 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Darker Grotesque";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// Navigation
+.navigation__title--div {
+  color: $light-color;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.navigation__link {
+  color: $light-color;
+  font-weight: bold;
+}
+
+// Navigation / Showcase
+.main__title--span {
+  color: $light-color;
+  background: $background-color-alpha;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+.main--slogan {
+  color: $light-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+// About Section
+.about--heading {
+  color: $font-color2;
+  text-transform: uppercase;
+}
+
+.about--bio {
+  font-style: italic;
+  font-weight: 600;
+}
+
+// Location Section
+.location--text {
+  color: $light-color;
+  font-size: 120%;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding-left: 0.5rem;
+}
+
+// Card Section
+.card--text,
+.cut__counter {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.call--link {
+  color: $background-color;
+
+  &:hover {
+    @include bgFontColor;
+  }
+}
+
+// Gallery Section
+.gallery--heading {
+  text-transform: uppercase;
+}
+
+// Footer
+.navigation__title--div {
+  letter-spacing: 0;
+  font-size: 80%;
+  transition: background 0.5s;
+}
+
+.navigation__title--copyright {
+  color: $light-color;
+}
+
+.footer--icon {
+  color: $light-color;
+  padding-left: 0.2rem;
+  font-size: 120%;
+}

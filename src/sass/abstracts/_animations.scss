@@ -1,0 +1,44 @@
+.div--slide {
+  display: none;
+}
+
+.showcase--entrance {
+  transform: translateX(-4500px);
+  animation: entrance 0.5s forwards ease-in;
+}
+
+@keyframes entrance {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@mixin bgCardAnimation {
+  // Card Div
+  transition-duration: 0.5s;
+  -webkit-transition: all 0.5 ease;
+  -moz-transition: all 0.5 ease;
+  -o-transition: all 0.5 ease;
+  -ms-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), $font-color1--alpha),
+      url("/src/img/card--bg.jpg");
+    background-position: 0.7rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .card--text,
+    .cut__counter {
+      color: $light-color;
+    }
+
+    .card--icon {
+      transition-duration: 0.5s;
+      color: #fff;
+      transform: scale(1.5);
+      margin-bottom: 0.5rem;
+    }
+  }
+}

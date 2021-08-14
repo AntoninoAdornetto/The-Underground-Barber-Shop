@@ -1,0 +1,79 @@
+@import "../abstracts/variables";
+
+.center {
+  text-align: center;
+}
+
+.bottom {
+  margin-inline: 2rem;
+  border-bottom: 1px solid $font-color1;
+}
+
+.top {
+  margin-inline: 2rem;
+  border-top: 1px solid $font-color1;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.split--div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  padding: 1rem;
+}
+
+// Setting Text On Left Side
+.split--div--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 50%;
+  padding: 1rem;
+}
+
+.split--icon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.split--text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__container {
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color-alpha;
+}
+
+.container {
+  max-width: 70rem;
+  height: 100%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+.hide--mobile {
+  display: none;
+}
+
+#clear {
+  height: 10vh;
+}

@@ -1,0 +1,21 @@
+#about__section {
+  height: 50vh;
+  width: 100%;
+
+  .inner--div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    padding: 0.5rem;
+  }
+
+  .btn--div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+  }
+}
