@@ -1,8 +1,8 @@
 @import "../abstracts/variables";
 
 .navigation {
-  width: 100%;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   background-image: linear-gradient(
       to right bottom,
       $showcase-color1,
