@@ -1,10 +1,11 @@
 {
   "name": "v10",
   "version": "1.0.0",
-  "description": "",
+  "description": "Static Webpage for the Underground Barbershop",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --dist-dir ./final",
     "sass": "node-sass -w src/sass/ -o src/css/ --recursive"
   },
   "keywords": [],
