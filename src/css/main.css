@@ -242,7 +242,7 @@ img {
   display: none; }
 
 #showcase {
-  height: 90vh; }
+  min-height: 90vh; }
   #showcase .showcase__logo--div {
     height: 50%;
     width: 50%;
@@ -255,6 +255,8 @@ img {
     width: 100%;
     margin: 2rem auto; }
   #showcase .showcase--container {
+    position: absolute;
+    outline: 1px solid white;
     height: 100%;
     width: 100%; }
 

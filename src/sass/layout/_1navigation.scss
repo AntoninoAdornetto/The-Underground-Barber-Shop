@@ -32,7 +32,7 @@
 
 // ShowCase
 #showcase {
-  height: 90vh;
+  min-height: 90vh;
   .showcase__logo--div {
     height: 50%;
     width: 50%;
@@ -48,6 +48,8 @@
   }
 
   .showcase--container {
+    position: absolute;
+    outline: 1px solid white;
     height: 100%;
     width: 100%;
   }
