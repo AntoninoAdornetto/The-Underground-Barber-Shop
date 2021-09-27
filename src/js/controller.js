@@ -4,7 +4,9 @@ import MapView from './views/mapview.js';
 import SlideView from './views/slideview.js';
 
 // Browser Support
+window.__forceSmoothScrollPolyfill__ = true;
 import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
@@ -28,7 +30,6 @@ const siteController = function () {
 };
 
 const init = function () {
-  smoothscroll.polyfill();
   MapView._handleEventRender(siteController);
 };
 
