@@ -1,26 +1,44 @@
-@import "../abstracts/variables";
+@import '../abstracts/variables';
 
-#footer {
-  height: 100%;
-  width: 100%;
-  margin-inline: auto;
-  background-color: $background-color;
-  overflow: hidden;
+footer {
+  background-color: black;
 
-  .footer__container {
-    height: 100%;
-    // max-width: 123.8rem;
-    width: 100%;
-    background: $background-color;
-    margin-inline: auto;
+  .footer--heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .navigation__title--div,
-  .navigation__title--copyright {
-    height: 100%;
-    width: 100%;
-    margin: 0.5rem 0;
+  .footer--remain {
+    margin-bottom: 0.5rem;
+    display: flex;
+
+    div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .footer--credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.2rem;
+  }
+
+  .icon--links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin: 0 0.2rem;
+      color: $light-color;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
   }
 }
-
-//

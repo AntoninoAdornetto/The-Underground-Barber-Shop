@@ -1,21 +1,14 @@
-#about__section {
-  height: 50vh;
-  width: 100%;
+.heading--div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+}
 
-  .inner--div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 40%;
-    padding: 0.5rem;
-  }
-
-  .btn--div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
+.description--div {
+  ul {
+    margin-top: 1rem;
   }
 }

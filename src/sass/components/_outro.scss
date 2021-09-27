@@ -1,0 +1,81 @@
+@import '../abstracts/variables';
+
+#divider--3 {
+  background-color: black;
+
+  .outro--wrapper {
+    display: flex;
+  }
+
+  .outtro--div {
+    width: 50%;
+    padding: 1rem;
+    color: $light-color;
+  }
+
+  .outtro--img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    background-color: $light-color;
+
+    img {
+      width: 30%;
+    }
+  }
+
+  .outtro--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-color;
+    padding: 2rem;
+  }
+
+  .outtro--text {
+    max-width: 45ch;
+  }
+
+  .outtro__links--header {
+    display: flex;
+    background-color: $light-color;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outtro--links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-color;
+    padding: 1rem;
+
+    div {
+      display: flex;
+      width: 50%;
+
+      a {
+        color: black;
+        transition: all 0.5s;
+
+        &:hover {
+          transition: all 0.5s;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .left {
+      justify-content: flex-end;
+      padding: 0.5rem;
+    }
+
+    .right {
+      justify-content: flex-start;
+      padding: 0.5rem;
+    }
+  }
+}

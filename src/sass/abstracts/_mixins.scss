@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 
 @mixin bgFontColor {
   transition: color 0.5s;
@@ -35,4 +35,20 @@
     background-position: left bottom;
     color: $font-color2;
   }
+}
+
+@mixin bluredImg {
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(3px);
+}
+
+@mixin imgBG {
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

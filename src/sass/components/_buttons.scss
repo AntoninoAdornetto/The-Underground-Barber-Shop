@@ -1,4 +1,4 @@
-@import "../abstracts/mixins";
+@import '../abstracts/mixins';
 
 .navigation__toggle {
   position: absolute;
@@ -22,13 +22,18 @@
   @include bgFontColor;
 }
 
-.navigation__button {
+.btn {
+  margin-top: 1rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
   @include btnLight;
 }
 
 .navigation__button--dark {
+  margin-top: 3rem;
   text-transform: uppercase;
   font-weight: bold;
   @include btnDark;

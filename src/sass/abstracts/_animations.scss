@@ -1,44 +1,78 @@
-.div--slide {
-  display: none;
+@import './variables';
+
+// Navigation
+// Hamburger Menu
+.hamburger--hover:hover {
+  animation: hamburgerHover 0.7s forwards ease-in;
+  @keyframes hamburgerHover {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(180deg);
+    }
+  }
 }
 
-.showcase--entrance {
-  transform: translateX(-4500px);
-  animation: entrance 0.5s forwards ease-in;
+.hamburger--hover:active {
+  animation: hamburgerCheck 0.5s forwards ease-in;
+  @keyframes hamburgerCheck {
+    100% {
+      transform: translateY(50px);
+    }
+  }
 }
 
-@keyframes entrance {
-  to {
+// Mobile Drop Down Effect from Hamburger Btn
+.mobile--dropdown {
+  .mobile--ul {
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+    transform: translateY(0);
+  }
+}
+
+.heading--animation {
+  animation: headingSlide 1s forwards ease-in-out;
+}
+
+@keyframes headingSlide {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
     transform: translateX(0);
   }
 }
 
-@mixin bgCardAnimation {
-  // Card Div
-  transition-duration: 0.5s;
-  -webkit-transition: all 0.5 ease;
-  -moz-transition: all 0.5 ease;
-  -o-transition: all 0.5 ease;
-  -ms-transition: all 0.5 ease;
-  transition: all 0.5 ease;
+.span--animation {
+  animation: spanSlide 1s forwards ease-in-out;
+}
 
-  &:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), $font-color1--alpha),
-      url("/src/img/card--bg.jpg");
-    background-position: 0.7rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+@keyframes spanSlide {
+  0% {
+    transform: translateX(1000px);
+  }
 
-    .card--text,
-    .cut__counter {
-      color: $light-color;
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.icon--transition {
+  animation: iconTransition 1s forwards ease-in;
+
+  @keyframes iconTransition {
+    0% {
+      opacity: 0.2;
+      transform: scale(0.1);
     }
 
-    .card--icon {
-      transition-duration: 0.5s;
-      color: #fff;
-      transform: scale(1.5);
-      margin-bottom: 0.5rem;
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }

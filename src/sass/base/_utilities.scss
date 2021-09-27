@@ -1,79 +1,151 @@
-@import "../abstracts/variables";
+@import '../abstracts/variables';
+@import '../abstracts/animations';
+@import '../abstracts/mixins';
 
-.center {
-  text-align: center;
+// Testing Class
+.out {
+  outline: 1px solid white;
 }
+///// REMOVE WHEN DONE ^
 
-.bottom {
-  margin-inline: 2rem;
-  border-bottom: 1px solid $font-color1;
-}
-
-.top {
-  margin-inline: 2rem;
-  border-top: 1px solid $font-color1;
-}
-
-.left {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.split--div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-  padding: 1rem;
-}
-
-// Setting Text On Left Side
-.split--div--left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 50%;
-  padding: 1rem;
-}
-
-.split--icon {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.split--text {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.navigation__container {
-  width: 100%;
-  margin-inline: auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $background-color-alpha;
-}
-
-.container {
-  max-width: 70rem;
-  height: 100%;
-  margin: 0.5rem auto;
-  padding: 0.5rem;
-}
-
-.hide--mobile {
+// Event Classes
+.hide--content {
   display: none;
 }
 
-#clear {
-  height: 10vh;
+.invisible {
+  visibility: hidden;
+}
+
+// Containers
+.nav--container {
+  max-width: 70rem;
+  height: auto;
+  margin-inline: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.footer--container {
+  max-width: 70rem;
+  height: auto;
+  margin-inline: auto;
+  padding: 0.5rem;
+  position: relative;
+}
+
+// Hero Container saved in Navigation scss
+
+.container {
+  max-width: 70rem;
+  height: auto;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+// Headings, Descriptions & img div's
+.heading--div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.description--div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.img--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.map--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 50vh;
+  padding: 1.5rem;
+
+  #mapid {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#divider,
+#divider--2,
+#divider--3 {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+// 1st Divider
+#divider > .bg--image {
+  background-image: url('../img/divider--img.jpg');
+  @include bluredImg;
+}
+
+#divider--2 > .bg--image {
+  background-image: url('../img/barberpole2.jpg');
+  @include imgBG;
+}
+
+#divider > .bg--text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#divider--2 > .bg--text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cut__counter--div {
+  background-color: $background-color-alpha;
+  padding: 1rem;
+}
+
+// Color Utilities
+.white--bg {
+  background-color: $light-color;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.white__bg--transparant {
+  background-color: rgba(255, 255, 255, 0.705);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.black {
+  color: #000;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+// Text Utilities
+.center {
+  text-align: center;
 }
