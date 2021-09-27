@@ -159,9 +159,9 @@ export default class View {
     const links = document.querySelectorAll('a');
     links.forEach((link) => {
       link.addEventListener('click', function (e) {
-        e.preventDefault();
-        if (e.target.target != undefined)
+        if (e.target.classList.contains('nav--link') || e.target.classList.contains('btn'))
           return document.getElementById(e.target.getAttribute('href').slice(1)).scrollIntoView({ behavior: 'smooth' });
+        else return;
       });
     });
   }
