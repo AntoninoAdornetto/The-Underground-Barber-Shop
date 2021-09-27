@@ -28,6 +28,7 @@ export default class View {
       ['heading--animation', 'span--animation', 'icon--transition']
     );
     this._executeOnScroll(this._hairCutCounter.bind(this));
+    this._handleSmoothScroll();
   }
 
   _renderMobileDropdown() {
@@ -148,5 +149,20 @@ export default class View {
     const VP = window.innerWidth;
     if (VP < 889) return this._setMobileImages(MobileArray);
     if (VP > 890) return this._setDeskTopImages(desktopArray);
+  }
+
+  _handleSmoothScroll() {
+    /**
+     * @constant links - Array of all Anchor Tags
+     * @description - Smooth scroll Poly fill for mobile.
+     */
+    const links = document.querySelectorAll('a');
+    links.forEach((link) => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (e.target.target != undefined)
+          return document.getElementById(e.target.getAttribute('href').slice(1)).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
   }
 }
