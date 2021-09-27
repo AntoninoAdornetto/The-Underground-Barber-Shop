@@ -4,3 +4,4 @@ GDist1/
 final/
 node_modules/
 .prettierrc
+.vscode
