@@ -1,4 +1,4 @@
-export const SPEED = 200;
+export const SPEED = 1000;
 export const COORDINATES = [43.61585008649451, -116.20304553678231];
 
 // Logos
