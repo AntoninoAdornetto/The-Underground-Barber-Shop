@@ -1,5 +1,4 @@
 import * as Model from './model.js';
-import app from './view.js';
 import View from './views/appview.js';
 import MapView from './views/mapview.js';
 import SlideView from './views/slideview.js';
