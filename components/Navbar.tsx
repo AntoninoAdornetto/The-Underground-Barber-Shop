@@ -1,12 +1,13 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styles from '@/styles/components/Navbar.module.scss';
+import Logo from '@/components/Logo';
+import { navImageConfigs } from '@/helpers/siteConfigs';
 
 interface NavigationProps {
   navOptions: string[];
-  logo: FC;
 }
 
-const Navbar: FC<NavigationProps> = ({ navOptions, logo }) => {
+const Navbar: React.FC<NavigationProps> = ({ navOptions }) => {
   const renderNavigation = navOptions.map((btn) => {
     return (
       <li key={btn}>
@@ -20,7 +21,13 @@ const Navbar: FC<NavigationProps> = ({ navOptions, logo }) => {
   return (
     <nav className={styles.navContainer}>
       <ul>
-        <li>{logo}</li>
+        <li>
+          <Logo
+            image={navImageConfigs.navigationLogo}
+            height={navImageConfigs.height}
+            width={navImageConfigs.width}
+          />
+        </li>
         {renderNavigation}
       </ul>
     </nav>
