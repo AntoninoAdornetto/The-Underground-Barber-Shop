@@ -1,0 +1,18 @@
+.navContainer {
+  max-width: 70rem;
+  transition: all 500ms;
+  margin-inline: auto;
+  padding: 1rem;
+  background: #000;
+  outline: 1px solid black;
+
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navAnchor {
+  color: #fff;
+}
