@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
+import Hero from '@/components/Hero';
+import { heroImageConfigs } from '@/helpers/siteConfigs';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +19,11 @@ const Home: NextPage = () => {
         />
       </Head>
       <Navbar navOptions={['About', 'Services', 'Contact', 'Gallery']} />
+      <Hero
+        image={heroImageConfigs.heroConcat()}
+        rgba1="32,33,36,.829"
+        rgba2="138,180,248,.274"
+      />
     </div>
   );
 };
