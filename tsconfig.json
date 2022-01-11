@@ -6,7 +6,8 @@
     "paths": {
       "@/styles/*": ["styles/*"],
       "@/components/*": ["components/*"],
-      "@/helpers/*": ["helpers/*"]
+      "@/helpers/*": ["helpers/*"],
+      "@/pages/*": ["pages/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
