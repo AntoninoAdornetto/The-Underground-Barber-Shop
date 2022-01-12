@@ -13,6 +13,7 @@ import Heading from '@components/Heading';
 import Button from '@components/Button';
 import About from '@components/About';
 import SectionTitle from '@components/SectionTitle';
+import Logo from '@components/Logo';
 
 const Home: NextPage = () => {
   return (
@@ -58,7 +59,14 @@ const Home: NextPage = () => {
       <About
         services={aboutConfigs.services}
         bio={aboutConfigs.bio}
-        sectionTitle={<SectionTitle text={aboutConfigs.sectionTitle} colors={aboutConfigs.colors} />}
+        sectionTitle={
+          <SectionTitle
+            text={aboutConfigs.sectionTitle}
+            colors={aboutConfigs.colors}
+            fontSize={6}
+            logo={<Logo image={aboutConfigs.icon} width={aboutConfigs.iconWidth} height={aboutConfigs.iconHeight} />}
+          />
+        }
       />
     </div>
   );
