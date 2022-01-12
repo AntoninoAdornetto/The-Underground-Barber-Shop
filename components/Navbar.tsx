@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '@/styles/components/Navbar.module.scss';
-import Logo from '@/components/Logo';
-import { navImageConfigs } from '@/helpers/siteConfigs';
+import styles from '@styles/components/Navbar.module.scss';
+import Logo from '@components/Logo';
+import { navImageConfigs } from '@helpers/siteConfigs';
 
 interface NavigationProps {
   navOptions: string[];

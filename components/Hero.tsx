@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/components/Hero.module.scss';
+import styles from '@styles/components/Hero.module.scss';
 
 interface Props {
   image: string;
