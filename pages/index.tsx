@@ -2,9 +2,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '@components/Navbar';
 import Hero from '@components/Hero';
+import { heroImageConfigs, heroHeadingConfigs, heroButtonConfigs, aboutConfigs } from '@helpers/siteConfigs';
 import Heading from '@components/Heading';
 import Button from '@components/Button';
-import { heroImageConfigs, heroHeadingConfigs, heroButtonConfigs } from '@helpers/siteConfigs';
+import About from '@components/About';
+import SectionTitle from '@components/SectionTitle';
 
 const Home: NextPage = () => {
   return (
@@ -42,6 +44,11 @@ const Home: NextPage = () => {
             fontSize={heroButtonConfigs.fontSize}
           />
         }
+      />
+      <About
+        services={aboutConfigs.services}
+        bio={aboutConfigs.bio}
+        sectionTitle={<SectionTitle text={aboutConfigs.sectionTitle} colors={aboutConfigs.colors} />}
       />
     </div>
   );
