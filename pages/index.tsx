@@ -4,7 +4,7 @@ import Navbar from '@components/Navbar';
 import Hero from '@components/Hero';
 import Heading from '@components/Heading';
 import Button from '@components/Button';
-import { heroImageConfigs } from '@helpers/siteConfigs';
+import { heroImageConfigs, heroHeadingConfigs, heroButtonConfigs } from '@helpers/siteConfigs';
 
 const Home: NextPage = () => {
   return (
@@ -30,9 +30,17 @@ const Home: NextPage = () => {
         image={heroImageConfigs.heroConcat()}
         rgba1="32,33,36,.829"
         rgba2="138,180,248,.274"
-        heading={<Heading mainText="The Underground" subText="Barbershop" />}
+        heading={<Heading mainText={heroHeadingConfigs.heading} subText={heroHeadingConfigs.subText} />}
         button={
-          <Button text="Learn More" hrefVal="#about" width={150} height={45} bgColor="#000" color="#fff" fontSize={2} />
+          <Button
+            text={heroButtonConfigs.text}
+            hrefVal={heroButtonConfigs.hrefVal}
+            width={heroButtonConfigs.width}
+            height={heroButtonConfigs.height}
+            bgColor={heroButtonConfigs.bgColor}
+            color={heroButtonConfigs.color}
+            fontSize={heroButtonConfigs.fontSize}
+          />
         }
       />
     </div>
