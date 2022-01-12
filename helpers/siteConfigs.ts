@@ -1,3 +1,7 @@
+interface INavSelections {
+  hrefVals: string[];
+}
+
 interface InavImageOptions {
   navigationLogo: string;
   width: number | null;
@@ -31,6 +35,10 @@ interface IAboutOptions {
   services: string[];
   colors: string[];
 }
+
+export const navSelectionConfigs: INavSelections = {
+  hrefVals: ['About', 'Services', 'Contact', 'Gallery'],
+};
 
 export const navImageConfigs: InavImageOptions = {
   navigationLogo:
