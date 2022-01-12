@@ -2,7 +2,13 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '@components/Navbar';
 import Hero from '@components/Hero';
-import { heroImageConfigs, heroHeadingConfigs, heroButtonConfigs, aboutConfigs } from '@helpers/siteConfigs';
+import {
+  navSelectionConfigs,
+  heroImageConfigs,
+  heroHeadingConfigs,
+  heroButtonConfigs,
+  aboutConfigs,
+} from '@helpers/siteConfigs';
 import Heading from '@components/Heading';
 import Button from '@components/Button';
 import About from '@components/About';
@@ -27,21 +33,25 @@ const Home: NextPage = () => {
           rel="stylesheet"
         ></link>
       </Head>
-      <Navbar navOptions={['About', 'Services', 'Contact', 'Gallery']} />
-      <Hero
-        image={heroImageConfigs.heroConcat()}
-        rgba1="32,33,36,.829"
-        rgba2="138,180,248,.274"
-        heading={<Heading mainText={heroHeadingConfigs.heading} subText={heroHeadingConfigs.subText} />}
-        button={
-          <Button
-            text={heroButtonConfigs.text}
-            hrefVal={heroButtonConfigs.hrefVal}
-            width={heroButtonConfigs.width}
-            height={heroButtonConfigs.height}
-            bgColor={heroButtonConfigs.bgColor}
-            color={heroButtonConfigs.color}
-            fontSize={heroButtonConfigs.fontSize}
+      <Navbar
+        navOptions={navSelectionConfigs.hrefVals}
+        heroSection={
+          <Hero
+            image={heroImageConfigs.heroConcat()}
+            rgba1="32,33,36,.829"
+            rgba2="138,180,248,.274"
+            heading={<Heading mainText={heroHeadingConfigs.heading} subText={heroHeadingConfigs.subText} />}
+            button={
+              <Button
+                text={heroButtonConfigs.text}
+                hrefVal={heroButtonConfigs.hrefVal}
+                width={heroButtonConfigs.width}
+                height={heroButtonConfigs.height}
+                bgColor={heroButtonConfigs.bgColor}
+                color={heroButtonConfigs.color}
+                fontSize={heroButtonConfigs.fontSize}
+              />
+            }
           />
         }
       />

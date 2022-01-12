@@ -5,9 +5,10 @@ import { navImageConfigs } from '@helpers/siteConfigs';
 
 interface NavigationProps {
   navOptions: string[];
+  heroSection: React.ReactNode;
 }
 
-const Navbar: React.FC<NavigationProps> = ({ navOptions }) => {
+const Navbar: React.FC<NavigationProps> = ({ navOptions, heroSection }) => {
   const renderNavigation = navOptions.map((btn) => {
     return (
       <li key={btn}>
@@ -20,16 +21,19 @@ const Navbar: React.FC<NavigationProps> = ({ navOptions }) => {
 
   return (
     <nav className={styles.navContainer}>
-      <ul>
-        <li>
-          <Logo
-            image={navImageConfigs.navigationLogo}
-            height={navImageConfigs.height}
-            width={navImageConfigs.width}
-          />
-        </li>
-        {renderNavigation}
-      </ul>
+      <div className={styles.navWrapper}>
+        <ul>
+          <li>
+            <Logo
+              image={navImageConfigs.navigationLogo}
+              height={navImageConfigs.height}
+              width={navImageConfigs.width}
+            />
+          </li>
+          {renderNavigation}
+        </ul>
+      </div>
+      {heroSection ? heroSection : null}
     </nav>
   );
 };

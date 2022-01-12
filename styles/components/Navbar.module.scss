@@ -1,24 +1,36 @@
 @import './variables.scss';
 
-.navContainer {
-  position: sticky;
-  max-width: 120rem;
-  width: 100%;
-  margin-inline: auto;
-  transition: all 500ms;
-  padding: 1rem;
-  background: transparent;
-  z-index: 2;
-
-  & > ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav {
+  &Container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
   }
-}
 
-.navAnchor {
-  font-family: $nav-font;
-  color: #fff;
-  font-size: 1.5rem;
+  &Wrapper {
+    width: 100%;
+    max-width: 100%;
+    transition: all 500ms;
+    padding: 1rem;
+    background: transparent;
+    position: fixed;
+    z-index: 2;
+    outline: 1px solid black;
+
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 120rem;
+      margin-inline: auto;
+    }
+
+    & a {
+      font-family: $nav-font;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
 }

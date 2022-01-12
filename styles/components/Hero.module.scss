@@ -5,16 +5,14 @@
   max-height: 100%;
   position: absolute;
   top: 0;
-  z-index: 1;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(32, 33, 36, 0.829),
-    rgba(138, 180, 248, 0.274)
-  );
+  left: 0;
+  background-image: linear-gradient(to right bottom, rgba(32, 33, 36, 0.829), rgba(138, 180, 248, 0.274));
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
