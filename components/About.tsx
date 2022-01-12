@@ -2,21 +2,19 @@ import React from 'react';
 import styles from '@styles/components/About.module.scss';
 
 interface Props {
-  sectionTitle: React.ReactNode;
   bio: string;
   services: string[];
+  sectionTitle: React.ReactNode;
 }
 
 const About: React.FC<Props> = ({ sectionTitle, bio, services }) => {
-  // Section title
-  // Icon
-  // Bio Text
-  // List items of services
   return (
-    <section id="#about" className={styles.aboutSectionContainer}>
-      <div className={styles.titleContainer}>{sectionTitle}</div>
-      <div className={styles.bioContainer}>{bio}</div>
-      <div className={styles.servicesContainer}>{services}</div>
+    <section id="#about" className={styles.aboutContainer}>
+      <div className={styles.aboutTitle}>{sectionTitle}</div>
+      <div className={styles.aboutBio}>
+        <p>{bio}</p>
+      </div>
+      <div className={styles.aboutServices}>{services}</div>
     </section>
   );
 };
