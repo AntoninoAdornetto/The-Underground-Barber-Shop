@@ -1,5 +1,24 @@
 @import './variables.scss';
 
-.aboutSectionContainer {
-  height: 100vh;
+.about {
+  &Container {
+    height: 100vh;
+    max-height: 100%;
+    max-width: 120rem;
+    margin-inline: auto;
+    outline: 1px solid black;
+  }
+
+  &Title {
+    width: 100%;
+    height: 50px;
+    outline: 1px solid red;
+    height: auto;
+    padding: 1rem;
+  }
+
+  &Bio {
+    width: 100%;
+    display: block;
+  }
 }

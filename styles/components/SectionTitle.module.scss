@@ -1,10 +1,15 @@
 @import './variables.scss';
 
 .sectionTitleContainer {
-  position: absolute;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+
+  & span {
+    font-family: $section-font;
+    text-transform: uppercase;
+    white-space: pre;
+  }
 }

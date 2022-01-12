@@ -27,6 +27,7 @@
     height: 50%;
     width: 100%;
     color: #fff;
+    padding-top: 2.5rem;
     @extend %heading--text;
 
     & span {
@@ -36,26 +37,3 @@
     }
   }
 }
-
-// .headingDiv {
-//   //   position: absolute;
-//   //   max-width: 50%;
-//   //   min-height: 25%;
-//   //   outline: 1px solid red;
-
-//   .headingTop {
-//     height: 50%;
-//   }
-
-//   & h1 {
-//     font-size: 5rem;
-//     text-align: center;
-//     max-width: 15ch;
-//     color: #fff;
-//   }
-
-//   & span {
-//     font-size: 3rem;
-//     text-align: center;
-//   }
-// }
