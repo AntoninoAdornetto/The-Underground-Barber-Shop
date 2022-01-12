@@ -1,0 +1,61 @@
+@import './variables.scss';
+.heading {
+  &Div {
+    width: 50%;
+    height: 25%;
+  }
+
+  &Top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    margin-inline: auto;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+    @extend %heading--text;
+
+    & h1 {
+      font-size: 5rem;
+      font-family: $heading-font;
+      color: #fff;
+    }
+  }
+
+  &Bottom {
+    height: 50%;
+    width: 100%;
+    color: #fff;
+    @extend %heading--text;
+
+    & span {
+      font-family: $heading-font;
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+// .headingDiv {
+//   //   position: absolute;
+//   //   max-width: 50%;
+//   //   min-height: 25%;
+//   //   outline: 1px solid red;
+
+//   .headingTop {
+//     height: 50%;
+//   }
+
+//   & h1 {
+//     font-size: 5rem;
+//     text-align: center;
+//     max-width: 15ch;
+//     color: #fff;
+//   }
+
+//   & span {
+//     font-size: 3rem;
+//     text-align: center;
+//   }
+// }

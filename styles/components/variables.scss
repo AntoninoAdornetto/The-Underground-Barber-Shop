@@ -1,4 +1,14 @@
 // Colors
 $font-color1: #dc9e71;
 
-// Containers
+// Fonts
+$heading-font: 'Anton';
+$section-font: 'Fjalla One';
+$nav-font: 'Orelega One';
+$bio-font: 'Pathway Gothic One';
+
+// Extends
+%heading--text {
+  text-align: center;
+  text-transform: uppercase;
+}

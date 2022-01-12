@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+.pageButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: $bio-font;
+  border-radius: 0.3rem;
+  letter-spacing: 0.2rem;
+  transition: 500ms;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(10px);
+  }
+}

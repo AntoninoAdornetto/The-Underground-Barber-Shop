@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '@components/Navbar';
 import Hero from '@components/Hero';
+import Heading from '@components/Heading';
+import Button from '@components/Button';
 import { heroImageConfigs } from '@helpers/siteConfigs';
 
 const Home: NextPage = () => {
@@ -17,12 +19,21 @@ const Home: NextPage = () => {
           name="description"
           content="armanino, showroom, barbershop, haircut, boise, idaho, biagio, adornetto, fashion, style"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Orelega+One&family=Pathway+Gothic+One&family=Tenor+Sans&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Navbar navOptions={['About', 'Services', 'Contact', 'Gallery']} />
       <Hero
         image={heroImageConfigs.heroConcat()}
         rgba1="32,33,36,.829"
         rgba2="138,180,248,.274"
+        heading={<Heading mainText="The Underground" subText="Barbershop" />}
+        button={
+          <Button text="Learn More" hrefVal="#about" width={150} height={45} bgColor="#000" color="#fff" fontSize={2} />
+        }
       />
     </div>
   );
