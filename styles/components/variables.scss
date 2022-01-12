@@ -1,5 +1,6 @@
 // Colors
 $font-color1: #dc9e71;
+$font-color2: #87241a;
 
 // Fonts
 $heading-font: 'Anton';
@@ -11,4 +12,8 @@ $bio-font: 'Pathway Gothic One';
 %heading--text {
   text-align: center;
   text-transform: uppercase;
+}
+
+%container {
+  max-width: 120rem;
 }
