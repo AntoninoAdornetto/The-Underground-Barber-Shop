@@ -13,11 +13,11 @@ const About: React.FC<Props> = ({ sectionTitle, bio, services }) => {
   // Bio Text
   // List items of services
   return (
-    <div className={styles.aboutSectionContainer}>
+    <section id="#about" className={styles.aboutSectionContainer}>
       <div className={styles.titleContainer}>{sectionTitle}</div>
       <div className={styles.bioContainer}>{bio}</div>
       <div className={styles.servicesContainer}>{services}</div>
-    </div>
+    </section>
   );
 };
 
