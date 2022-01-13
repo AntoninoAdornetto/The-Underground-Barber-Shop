@@ -73,8 +73,8 @@ export const heroButtonConfigs: IHeroButtonOptions = {
   color: '#fff',
   bgColor: '#000',
   height: 45,
-  width: 150,
-  fontSize: 2,
+  width: 120,
+  fontSize: 1.75,
 };
 
 export const aboutConfigs: IAboutOptions = {
