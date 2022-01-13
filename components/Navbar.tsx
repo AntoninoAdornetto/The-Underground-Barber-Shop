@@ -5,7 +5,7 @@ import { navImageConfigs } from '@helpers/siteConfigs';
 
 interface NavigationProps {
   navOptions: string[];
-  heroSection: React.ReactNode;
+  heroSection?: React.ReactNode;
 }
 
 const Navbar: React.FC<NavigationProps> = ({ navOptions, heroSection }) => {
