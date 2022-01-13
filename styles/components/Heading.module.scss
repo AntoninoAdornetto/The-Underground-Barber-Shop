@@ -10,13 +10,14 @@
     justify-content: center;
     align-items: center;
     height: 50%;
-    width: 60%;
+    width: 50%;
     margin-inline: auto;
     border-top: 1px dashed #fff;
     border-bottom: 1px dashed #fff;
     @extend %heading--text;
 
     & h1 {
+      position: absolute;
       font-size: 5rem;
       font-family: $heading-font;
       color: #fff;

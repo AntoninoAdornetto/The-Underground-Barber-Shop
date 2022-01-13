@@ -18,12 +18,37 @@
 
   &Bio {
     width: 100%;
-    max-width: 150ch;
+    max-width: 200ch;
     margin-inline: auto;
     line-height: 1.8;
+    padding: 0 1rem;
     & p {
       font-size: 2rem;
       font-family: $bio-font;
+    }
+  }
+
+  &Services {
+    width: 100%;
+    max-width: 100rem;
+    margin-inline: auto;
+    padding: 2rem;
+
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & li {
+        display: flex;
+        align-items: center;
+
+        & p {
+          font-family: $nav-font;
+          font-size: 1.6rem;
+          padding: 0 1rem;
+        }
+      }
     }
   }
 }
