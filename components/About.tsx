@@ -9,7 +9,7 @@ interface Props {
 
 const About: React.FC<Props> = ({ sectionTitle, bio, services }) => {
   return (
-    <section id="#about" className={styles.aboutContainer}>
+    <section id="about" className={styles.aboutContainer}>
       <div className={styles.aboutTitle}>{sectionTitle}</div>
       <div className={styles.aboutBio}>
         <p>{bio}</p>
