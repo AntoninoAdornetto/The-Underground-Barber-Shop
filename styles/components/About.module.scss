@@ -12,13 +12,18 @@
   &Title {
     width: 100%;
     height: 50px;
-    outline: 1px solid red;
     height: auto;
     padding: 1rem;
   }
 
   &Bio {
     width: 100%;
-    display: block;
+    max-width: 150ch;
+    margin-inline: auto;
+    line-height: 1.8;
+    & p {
+      font-size: 2rem;
+      font-family: $bio-font;
+    }
   }
 }
