@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 50%;
-    width: 50%;
+    width: 60%;
     margin-inline: auto;
     border-top: 1px dashed #fff;
     border-bottom: 1px dashed #fff;
@@ -32,7 +32,7 @@
 
     & span {
       font-family: $heading-font;
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: bold;
     }
   }

@@ -1,5 +1,4 @@
 @import './variables.scss';
-
 .nav {
   &Container {
     position: relative;
@@ -17,7 +16,6 @@
     background: transparent;
     position: fixed;
     z-index: 2;
-    outline: 1px solid black;
 
     & ul {
       display: flex;
@@ -30,7 +28,12 @@
     & a {
       font-family: $nav-font;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
+      transition: 500ms;
+
+      &:hover {
+        color: $font-color1;
+      }
     }
   }
 }
