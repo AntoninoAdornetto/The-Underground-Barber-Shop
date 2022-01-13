@@ -23,4 +23,11 @@ describe('Check navbar funcationality', () => {
       expect(item).toHaveAttribute('href', `#${navigation[i].toLowerCase()}`);
     });
   });
+
+  it('Will not create any elements on the page if an empty array is passed in', () => {
+    const navigation: [] = [];
+    render(<Navbar navOptions={navigation} />, container);
+    const linkButton = screen.queryByRole('link');
+    expect(linkButton).not.toBeInTheDocument();
+  });
 });
