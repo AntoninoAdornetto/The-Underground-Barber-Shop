@@ -1,0 +1,44 @@
+@import "./variables.module.scss";
+
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.secondary {
+  color: $font-color-2;
+}
+
+.dark {
+  color: $font-color-dark;
+}

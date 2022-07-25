@@ -1,0 +1,14 @@
+$bg-color: #000;
+$bg-color-alpha: rgba(0, 0, 0, 0.699);
+$font-color: #dc9e71;
+$font-color-alpha: rgba(220, 158, 113, 0.616);
+$font-color-light: #fff;
+$font-color-2: #87241a;
+$font-color-dark: #000;
+$transition: 600ms;
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
