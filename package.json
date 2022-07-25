@@ -1,24 +1,25 @@
 {
-  "name": "v10",
-  "version": "1.0.0",
-  "description": "Static Webpage for the Underground Barbershop",
-  "default": "index.html",
+  "private": true,
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./finalv11",
-    "sass": "node-sass -w src/sass/ -o src/css/ --recursive"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "test": "jest --watch",
+    "test:ci": "jest --ci"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "node-sass": "^6.0.1",
-    "core-js": "^3.15.2",
-    "regenerator-runtime": "^0.13.7",
-    "smoothscroll-polyfill": "^0.4.4"
+    "next": "latest",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.54.0"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-beta.3.1"
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "13.2.0",
+    "@testing-library/user-event": "14.2.0",
+    "@types/react": "18.0.9",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
+    "typescript": "4.6.4"
   }
 }
