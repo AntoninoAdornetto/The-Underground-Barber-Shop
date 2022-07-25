@@ -1,7 +1,25 @@
-# The Underground Barber Shop 
+# Next.js + Jest
 
-### The Site is live and can be viewed here https://armaninoshowroom.com
+This example shows how to configure Jest to work with Next.js.
 
-#### My goal with this project was to build a static site without depending on any frameworks such as Bootstrap, React or Vue. I wanted to keep the site simple but throw my Dad's humor (he calls it magic) within the site to show his character. 
+This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
 
-<img src="src/img/preview--img.JPG" alt="Markdown Preview of Site" style="height: 400px;">
+## How to Use
+
+Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+
+In your terminal, run the following command:
+
+```bash
+npx create-next-app --example with-jest with-jest-app
+# or
+yarn create next-app --example with-jest with-jest-app
+# or
+pnpm create next-app --example with-jest with-jest-app
+```
+
+## Run Jest Tests
+
+```bash
+npm test
+```
