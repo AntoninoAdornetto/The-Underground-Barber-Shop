@@ -26,3 +26,13 @@
 .heroImg {
 	z-index: -1;
 }
+
+@media (min-width: 200px) and (max-width: 900px) {
+	.landingContainer {
+		& > div {
+			h1 {
+				font-size: 5rem;
+			}
+		}
+	}
+}

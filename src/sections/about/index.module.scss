@@ -3,4 +3,64 @@
 .aboutContainer {
 	height: 50vh;
 	width: 100%;
+
+	div {
+		@extend %flex-center;
+		padding: 2rem;
+	}
+
+	h2 {
+		font-size: 6rem;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-size: 4rem;
+		text-align: center;
+	}
+
+	article {
+		@extend %flex-center;
+
+		p {
+			font-size: 1.7rem;
+			line-height: 2;
+			max-width: 100ch;
+		}
+	}
+
+	ul {
+		@extend %flex-center;
+		padding: 2rem;
+
+		li {
+			font-size: 1.4rem;
+			font-weight: bold;
+			padding-right: 1rem;
+		}
+	}
+}
+
+@media (min-width: 200px) and (max-width: 900px) {
+	.aboutContainer {
+		& > div {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 4rem;
+
+			span {
+				display: block;
+				padding-left: 2rem;
+			}
+		}
+
+		article {
+			p {
+				max-width: 40ch;
+				line-height: 1.7;
+			}
+		}
+	}
 }
