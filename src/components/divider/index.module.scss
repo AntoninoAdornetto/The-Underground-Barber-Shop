@@ -1,0 +1,17 @@
+@import "../../styles/variables.module.scss";
+
+.dividerContainer {
+  position: relative;
+
+  & > div {
+    height: 100%;
+    width: 100%;
+    @extend %flex-center;
+  }
+
+  h1 {
+    color: $font-color-light;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
