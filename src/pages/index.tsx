@@ -1,4 +1,3 @@
-import styles from "@/pages/index.module.scss";
 import Header from "@/sections/header";
 import Navigation from "@/sections/navigation";
 import Landing from "@/sections/landing";
