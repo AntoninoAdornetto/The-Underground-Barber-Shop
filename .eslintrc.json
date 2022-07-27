@@ -1,14 +1,15 @@
 {
   "root": true,
-  "extends": ["next/core-web-vitals"],
-  "plugins": ["testing-library"],
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["testing-library", "@typescript-eslint"],
   "overrides": [
-    // Only uses Testing Library lint rules in test files
     {
-      "files": [
-        "**/__tests__/**/*.[jt]s?(x)",
-        "**/?(*.)+(spec|test).[jt]s?(x)"
-      ],
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
       "extends": ["plugin:testing-library/react"]
     }
   ]
