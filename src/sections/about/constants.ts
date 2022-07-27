@@ -10,8 +10,9 @@ export const ABOUT_TEXT = `
 						barber.`;
 
 export const SERVICES = [
-	"Men's Hair Cut",
-	"Shampoo & Conditioner",
-	"Comedy Show",
-	"All for $30 plus any tip that goes towards his up and coming rap career",
+  "Men's Hair Cut",
+  "Shampoo & Conditioner",
+  "Comedy Show",
+  "All for $30",
+  "Any tips go towards his rap career",
 ];
