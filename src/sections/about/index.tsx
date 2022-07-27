@@ -1,21 +1,60 @@
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 
 import Section from "@/components/section";
 import styles from "./index.module.scss";
+import { ABOUT_TEXT } from "./constants";
 
 const About: React.FC = () => {
-	const generateServices = () => {
-		const services = [
-			"Men's Hair Cut",
-			"Shampoo & Conditioner",
-			"Comedy Show",
-			"All of this for $30",
-		];
+	const [serviceIndex, setServiceIndex] = useState<number>(0);
+	const [service, setService] = useState<string>(`Men's Hair Cut`);
 
-		return services.map((service) => {
-			return <li key={service}>{service}</li>;
-		});
+	const handleInterval = () => {
+		if (serviceIndex === services.length - 1) {
+			setService(0);
+		} else {
+			setService(serviceIndex++);
+		}
 	};
+
+	useEffect(() => {
+		const serviceInterval = setInterval(handleInterval, 1000);
+	});
+
+	{
+		/* const generateServices = () => { */
+	}
+	{
+		/* 	const services = [ */
+	}
+	{
+		/* 		"Men's Hair Cut", */
+	}
+	{
+		/* 		"Shampoo & Conditioner", */
+	}
+	{
+		/* 		"Comedy Show", */
+	}
+	{
+		/* 		"All of this for $30", */
+	}
+	{
+		/* 	]; */
+	}
+
+	{
+		/* 	return services.map((service) => { */
+	}
+	{
+		/* 		return <li key={service}>{`> ${service} `}</li>; */
+	}
+	{
+		/* 	}); */
+	}
+	{
+		/* }; */
+	}
 
 	return (
 		<React.Fragment>
@@ -24,20 +63,17 @@ const About: React.FC = () => {
 					<h2 className="secondary">
 						biagio's <span className="dark">vision</span>
 					</h2>
-					logo here
+					<Image src="/icons/eye--icon.png" width="75" height="75" />
 				</div>
 				<article>
-					<p>
-						Biagio has a strong aim for cutting and styling men's hair. Since 2001 he
-						has welcomed clients into his shop and consulted with them on desired
-						styles. He uses a plethora of different techniques but is well known across
-						the treasure valley for having some of the best scissor work. It’s very easy
-						for barbers to master a fade with clippers but having experience with
-						scissor work is essential for being a well versed Barber. The services that
-						Biagio offers are listed below:
-					</p>
+					<p>{ABOUT_TEXT}</p>
 				</article>
-				<ul>{generateServices()}</ul>
+				<div>
+					<h3 className="dark">Services & price:</h3>
+				</div>
+				<ul>
+					<li>{service}</li>
+				</ul>
 			</Section>
 		</React.Fragment>
 	);
