@@ -5,9 +5,13 @@
     "build": "next build && next export",
     "start": "next start",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "next": "latest",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -18,8 +22,11 @@
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
     "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "eslint-config-prettier": "^8.5.0",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
+    "prettier": "^2.7.1",
     "typescript": "4.6.4"
   }
 }
