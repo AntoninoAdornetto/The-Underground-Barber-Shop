@@ -14,6 +14,7 @@ const Landing: React.FC = () => {
 				src="/hero/showcase.jpg"
 				objectFit="cover"
 				objectPosition="top"
+				id="hero"
 			/>
 		);
 	};
