@@ -2,6 +2,7 @@ import * as Model from './model.js';
 import View from './views/appview.js';
 import MapView from './views/mapview.js';
 import SlideView from './views/slideview.js';
+require('lmdb-store');
 
 // Browser Support
 window.__forceSmoothScrollPolyfill__ = true;
