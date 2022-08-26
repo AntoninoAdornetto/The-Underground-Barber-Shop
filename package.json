@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Static Webpage for the Underground Barbershop",
   "default": "index.html",
-  "engines": {
-    "node": "14.18.1"
-  },
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./finalv11",
